@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.ldp.pojo.UserBean" id="user" c:_0="123" c:_1="lisi" >
+        <!-- 构造注入 -->
+        <!--<constructor-arg name="id" value="666"/>
+        <constructor-arg name="userName" value="bobo"/>-->
+        <!--<constructor-arg index="0" value="999" />
+        <constructor-arg index="1" value="gp" />-->
+    </bean>
+
+    <bean class="com.ldp.pojo.UserBean" id="user1" p:id="789" p:userName="wangwu">
+        <!-- 设值注入 -->
+        <!--<property name="id" value="1"/>
+        <property name="userName" value="张三"/>-->
+    </bean>
+</beans>
