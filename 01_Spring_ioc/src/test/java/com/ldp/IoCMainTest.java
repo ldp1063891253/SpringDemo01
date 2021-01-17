@@ -33,7 +33,8 @@ public class IoCMainTest {
         ApplicationContext ac =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
         // 2.从容器中获取UserBean对象 没有显示的new
-        UserBean user = (UserBean) ac.getBean("userBean");
+//     UserBean user = (UserBean) ac.getBean("userBean");
+        UserBean user = ac.getBean(UserBean.class);
         user.say();
     }
 

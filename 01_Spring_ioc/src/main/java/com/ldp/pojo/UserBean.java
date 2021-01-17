@@ -4,11 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-/**
- * 让每一个人的职业生涯不留遗憾
- *
- * @author 波波老师【咕泡学院】
- */
+
 public class UserBean {
 
     private Integer id;
